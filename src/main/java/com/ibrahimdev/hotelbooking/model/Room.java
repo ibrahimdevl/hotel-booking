@@ -19,6 +19,9 @@ public class Room {
     private RoomType type;
     private double price;
     private boolean isOccupied;
+    @ManyToOne
+    @JoinColumn(name = "hotel_id")
+    private Hotel hotel;
     @OneToMany(mappedBy = "room", fetch = FetchType.EAGER)
     private List<Reservation> reservations;
 }
