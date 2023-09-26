@@ -1,4 +1,4 @@
-package com.danielszulc.roomreserve.service;
+package com.ibrahimdev.hotelbooking.service.impl;
 
 import org.springframework.security.core.Authentication;
 

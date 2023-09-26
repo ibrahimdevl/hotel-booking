@@ -1,11 +1,7 @@
-package com.danielszulc.roomreserve.config;
+package com.ibrahimdev.hotelbooking.config;
 
-import com.danielszulc.roomreserve.model.User;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jws;
-import io.jsonwebtoken.JwtException;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.security.Keys;
+
+import com.ibrahimdev.hotelbooking.model.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;

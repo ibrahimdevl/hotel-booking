@@ -1,12 +1,15 @@
-package com.danielszulc.roomreserve.dto;
+package com.ibrahimdev.hotelbooking.dto;
 
-import com.danielszulc.roomreserve.utils.ValidPassword;
-import jakarta.validation.constraints.*;
+import com.ibrahimdev.hotelbooking.utils.ValidPassword;
 import lombok.Data;
+
+import javax.validation.constraints.*;
 
 @Data
 public class SignUp {
-    @NotNull @NotEmpty @NotBlank
+    @NotNull
+    @NotEmpty
+    @NotBlank
     private String firstName;
     @NotNull @NotEmpty @NotBlank
     private String lastName;

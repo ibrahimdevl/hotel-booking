@@ -1,9 +1,9 @@
-package com.danielszulc.roomreserve.utils;
+package com.ibrahimdev.hotelbooking.utils;
 
-import com.danielszulc.roomreserve.enums.Role;
-import com.danielszulc.roomreserve.exception.UnauthorizedException;
-import com.danielszulc.roomreserve.model.Address;
-import com.danielszulc.roomreserve.model.User;
+import com.ibrahimdev.hotelbooking.enums.Role;
+import com.ibrahimdev.hotelbooking.exception.UnauthorizedException;
+import com.ibrahimdev.hotelbooking.model.Address;
+import com.ibrahimdev.hotelbooking.model.User;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;

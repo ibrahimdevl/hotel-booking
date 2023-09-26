@@ -1,12 +1,12 @@
-package com.ibrahimdev.hotelbooking.repository.impl;
+package com.ibrahimdev.hotelbooking.service.impl;
 
-import com.danielszulc.roomreserve.dto.PersonDTO;
-import com.danielszulc.roomreserve.dto.PersonRequest;
-import com.danielszulc.roomreserve.enums.Gender;
-import com.danielszulc.roomreserve.mapper.UserMapper;
-import com.danielszulc.roomreserve.model.Person;
-import com.danielszulc.roomreserve.repository.PersonRepository;
-import com.danielszulc.roomreserve.service.PersonService;
+import com.ibrahimdev.hotelbooking.dto.PersonDTO;
+import com.ibrahimdev.hotelbooking.dto.PersonRequest;
+import com.ibrahimdev.hotelbooking.enums.Gender;
+import com.ibrahimdev.hotelbooking.mapper.UserMapper;
+import com.ibrahimdev.hotelbooking.model.Person;
+import com.ibrahimdev.hotelbooking.repository.PersonRepository;
+import com.ibrahimdev.hotelbooking.service.PersonService;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;

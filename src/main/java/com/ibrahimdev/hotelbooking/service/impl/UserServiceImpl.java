@@ -1,16 +1,16 @@
-package com.ibrahimdev.hotelbooking.repository.impl;
+package com.ibrahimdev.hotelbooking.service.impl;
 
-import com.danielszulc.roomreserve.config.JwtTokenUtil;
-import com.danielszulc.roomreserve.dto.*;
-import com.danielszulc.roomreserve.enums.Role;
-import com.danielszulc.roomreserve.exception.*;
-import com.danielszulc.roomreserve.model.User;
-import com.danielszulc.roomreserve.repository.PersonRepository;
-import com.danielszulc.roomreserve.repository.UserRepository;
-import com.danielszulc.roomreserve.service.AuthenticationService;
-import com.danielszulc.roomreserve.service.UserService;
-import com.danielszulc.roomreserve.service.UserValidator;
-import com.danielszulc.roomreserve.utils.SpecificationUtils;
+
+import com.ibrahimdev.hotelbooking.config.JwtTokenUtil;
+import com.ibrahimdev.hotelbooking.dto.AuthenticationResponse;
+import com.ibrahimdev.hotelbooking.dto.PersonDTO;
+import com.ibrahimdev.hotelbooking.dto.SignIn;
+import com.ibrahimdev.hotelbooking.dto.SignUp;
+import com.ibrahimdev.hotelbooking.model.User;
+import com.ibrahimdev.hotelbooking.repository.PersonRepository;
+import com.ibrahimdev.hotelbooking.repository.UserRepository;
+import com.ibrahimdev.hotelbooking.service.UserService;
+import com.ibrahimdev.hotelbooking.service.UserValidator;
 import jakarta.persistence.criteria.Predicate;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -1,7 +1,7 @@
-package com.danielszulc.roomreserve.service;
+package com.ibrahimdev.hotelbooking.service;
 
-import com.danielszulc.roomreserve.enums.Role;
-import com.danielszulc.roomreserve.model.User;
+import com.ibrahimdev.hotelbooking.enums.Role;
+import com.ibrahimdev.hotelbooking.model.User;
 
 import java.util.Collection;
 

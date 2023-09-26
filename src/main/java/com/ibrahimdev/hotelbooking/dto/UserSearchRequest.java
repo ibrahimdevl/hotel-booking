@@ -1,4 +1,4 @@
-package com.danielszulc.roomreserve.dto;
+package com.ibrahimdev.hotelbooking.dto;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

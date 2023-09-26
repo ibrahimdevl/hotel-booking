@@ -1,4 +1,4 @@
-package com.ibrahimdev.hotelbooking.services;
+package com.ibrahimdev.hotelbooking.service;
 
 import com.ibrahimdev.hotelbooking.dto.GuestRequest;
 import com.ibrahimdev.hotelbooking.dto.PersonDTO;

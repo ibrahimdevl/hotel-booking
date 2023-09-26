@@ -1,9 +1,10 @@
-package com.danielszulc.roomreserve.utils;
+package com.ibrahimdev.hotelbooking.utils;
 
-import jakarta.validation.Constraint;
-import jakarta.validation.Payload;
-import jakarta.validation.constraints.Pattern;
 
+
+import javax.validation.Constraint;
+import javax.validation.Payload;
+import javax.validation.constraints.Pattern;
 import java.lang.annotation.*;
 
 @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,}$")

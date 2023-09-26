@@ -1,9 +1,9 @@
-package com.danielszulc.roomreserve.mapper;
+package com.ibrahimdev.hotelbooking.mapper;
 
-import com.danielszulc.roomreserve.dto.SignUp;
-import com.danielszulc.roomreserve.dto.PersonDTO;
-import com.danielszulc.roomreserve.enums.Role;
-import com.danielszulc.roomreserve.model.User;
+import com.ibrahimdev.hotelbooking.dto.PersonDTO;
+import com.ibrahimdev.hotelbooking.dto.SignUp;
+import com.ibrahimdev.hotelbooking.enums.Role;
+import com.ibrahimdev.hotelbooking.model.User;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

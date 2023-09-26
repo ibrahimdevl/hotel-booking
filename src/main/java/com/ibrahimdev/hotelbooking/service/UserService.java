@@ -1,6 +1,6 @@
-package com.danielszulc.roomreserve.service;
+package com.ibrahimdev.hotelbooking.service;
 
-import com.danielszulc.roomreserve.dto.*;
+import com.ibrahimdev.hotelbooking.dto.*;
 
 import java.util.List;
 
