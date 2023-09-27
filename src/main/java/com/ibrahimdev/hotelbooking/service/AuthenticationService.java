@@ -1,4 +1,4 @@
-package com.ibrahimdev.hotelbooking.service.impl;
+package com.ibrahimdev.hotelbooking.service;
 
 import org.springframework.security.core.Authentication;
 

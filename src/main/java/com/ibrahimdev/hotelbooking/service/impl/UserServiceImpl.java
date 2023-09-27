@@ -2,15 +2,17 @@ package com.ibrahimdev.hotelbooking.service.impl;
 
 
 import com.ibrahimdev.hotelbooking.config.JwtTokenUtil;
-import com.ibrahimdev.hotelbooking.dto.AuthenticationResponse;
-import com.ibrahimdev.hotelbooking.dto.PersonDTO;
-import com.ibrahimdev.hotelbooking.dto.SignIn;
-import com.ibrahimdev.hotelbooking.dto.SignUp;
+import com.ibrahimdev.hotelbooking.dto.*;
+import com.ibrahimdev.hotelbooking.enums.Role;
+import com.ibrahimdev.hotelbooking.exception.UnauthorizedException;
+import com.ibrahimdev.hotelbooking.exception.UserNotFoundException;
 import com.ibrahimdev.hotelbooking.model.User;
 import com.ibrahimdev.hotelbooking.repository.PersonRepository;
 import com.ibrahimdev.hotelbooking.repository.UserRepository;
 import com.ibrahimdev.hotelbooking.service.UserService;
+import com.ibrahimdev.hotelbooking.service.AuthenticationService;
 import com.ibrahimdev.hotelbooking.service.UserValidator;
+import com.ibrahimdev.hotelbooking.utils.SpecificationUtils;
 import jakarta.persistence.criteria.Predicate;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -116,7 +118,7 @@ public class UserServiceImpl extends PersonServiceImpl<User> implements UserServ
         {
             userValidator.validateAdminPermissions(currentUser);
             user = userRepository.findByUsername(userRequest.getUsername())
-                .orElseThrow(() -> new UserNotFoundException(USER_NOT_FOUND_MESSAGE));
+                    .orElseThrow(() -> new UserNotFoundException(USER_NOT_FOUND_MESSAGE));
         }
 
         userRequest.setId(user.getId());
