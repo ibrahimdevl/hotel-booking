@@ -4,7 +4,6 @@ package com.ibrahimdev.hotelbooking.model;
 import com.ibrahimdev.hotelbooking.enums.Gender;
 import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.boot.autoconfigure.amqp.RabbitConnectionDetails.Address;
 
 import java.util.List;
 
