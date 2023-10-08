@@ -33,7 +33,7 @@ public class HotelUserDetailsService implements UserDetailsService {
     }
     @PostConstruct
     protected void initialize() {
-        createDefaultAdminUser();
+//        createDefaultAdminUser();
     }
 
     private void createDefaultAdminUser() {
