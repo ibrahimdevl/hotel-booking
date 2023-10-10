@@ -2,7 +2,9 @@ package com.ibrahimdev.hotelbooking.controller;
 
 import static org.mockito.Mockito.when;
 
+import com.ibrahimdev.hotelbooking.dto.AuthenticationResponse;
 import com.ibrahimdev.hotelbooking.dto.PersonDTO;
+import com.ibrahimdev.hotelbooking.dto.SignIn;
 import com.ibrahimdev.hotelbooking.dto.SignUp;
 import com.ibrahimdev.hotelbooking.service.UserService;
 
@@ -44,5 +46,24 @@ public class AuthControllerRegisterUserTest {
 
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.CREATED);
         assertThat(responseEntity.getBody()).isEqualTo(personDTO);
+    }
+
+    @Test
+    public void shouldLoginUserSuccessfully() {
+        SignIn signInDto = new SignIn();
+        signInDto.setUsername("ibrahimdev");
+        signInDto.setPassword("password");
+
+        AuthenticationResponse authenticationResponse = new AuthenticationResponse();
+        authenticationResponse.setEmail("ibrahimdev@example.com");
+        authenticationResponse.setToken("test_token");
+
+        when(userServiceMock.authenticateUser(signInDto)).thenReturn(authenticationResponse);
+
+        AuthController authController = new AuthController(userServiceMock);
+        ResponseEntity<AuthenticationResponse> responseEntity = authController.login(signInDto);
+
+        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(responseEntity.getBody()).isEqualTo(authenticationResponse);
     }
 }
